@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Muhammad Usama",
-    title: "Hi, I'm Usama",
+    title: "Hi, I'm M. Usama Akhtar",
     subTitle: "A Software Engineer focused on Software Quality and Testing, with experience in frontend development and cloud essentials.",
   resumeLink:
     "https://drive.google.com/file/d/1Y9ly-Ykk5FQIKgJBTnBWBrtFPvIi7x4q/view?usp=drive_link", // Set to empty to hide the button
@@ -35,7 +35,7 @@ const socialMediaLinks = {
   linkedin: "",
   gmail: "musamaakhtar63@gmail.com",
   facebook: "https://www.facebook.com/musamaakhtar.tech",
-  medium: "https://medium.com/@UACodeHorizon",
+  medium: "https://medium.com/@musamaakhtar-tech",
   stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
@@ -96,6 +96,10 @@ const skillsSection = {
     {
       skillName: "Microsoft Office",
       fontAwesomeClassname: "fa-brands fa-microsoft"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     }
   ],
   display: true
@@ -167,6 +171,16 @@ const workExperiences = {
         "Worked with HTML, CSS, JavaScript to build and refine UI components",
         "Improved responsiveness and user interaction in web applications"
       ]
+    },
+    {
+      schoolName: "Punjab Group of Colleges, Daska",
+      logo: require("./assets/images/PGC_Logo.png"), 
+      subHeader: "F.Sc (Pre-Engineering)",
+      duration: "September 2017 - March 2019",
+      desc: "Focused on mathematics, physics, and foundational computing concepts.",
+      descBullets: [
+        "Prepared for engineering studies with a strong focus on analytical problem-solving"
+      ]
     }
   ]
 };
@@ -175,7 +189,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -209,56 +223,245 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      role: "Frontend Development Intern",
+      company: "CodeAlpha",
+      companylogo: require("./assets/images/CodeAlpha_Logo.png"), 
+      date: "August 2024 – September 2024",
+      desc: "Contributed to frontend development projects, enhancing user interfaces and improving component functionality.",
+      descBullets: [
+        "Worked with HTML, CSS, JavaScript to build and refine UI components",
+        "Improved responsiveness and user interaction in web applications"
+      ]
+    },
+    {
+      role: "Quality Assurance Tester Intern",
+      company: "Regional Plan 9",
+      companylogo: require("./assets/images/RP9-Logo.jpg"), 
+      date: "August 2023 – September 2023",
+      desc: "Conducting comprehensive testing of software applications to ensure quality and functionality.",
+      descBullets: [
+        "Identifying, documenting, and reporting bugs and issues.",
+        "Collaborating with the development team to resolve defects and enhance product quality.",
+        "Executing test plans, scenarios, scripts, and procedures."
+      ]
+    }
+  ]
+};
+
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
+const openSource = {
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Projects",
+  subtitle: "SOME PROJECTS I BUILT DURING MY DEGREE AND INTERNSHIP",
+  projects: [
+    {
+      image: require("./assets/images/NexGenArcade_Logo.png"), 
+      projectName: "NexGen-Arcade",
+      projectDesc: "A gaming store platform developed for the Pakistani gaming community, focusing on UI design, database management, and user engagement.",
+      footerLink: [
+        {
+          name: "View Project (GitHub)",
+          url: "https://github.com/musamaakhtar-tech/FYP-NexGen-Arcade" 
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Achievement Section
+// Include certificates, talks etc
+
+const achievementSection = {
+  title: emoji("Achievements And Certifications 🏆"),
+  subtitle: "Certifications and trainings that showcase my learning journey and technical growth.",
+
+  achievementsCards: [
+    {
       title: "AWS Cloud Technical Essentials",
-      subtitle: "Completed this course on Coursera to understand core AWS services and cloud infrastructure basics.",
-      image: require("./assets/images/AWS-Logo.png"), // Add a suitable AWS logo to assets/images
+      subtitle: "Completed this course on Coursera to understand core AWS services and cloud infrastructure basics. Skills: AWS Identity and Access Management (AWS IAM) · Networking on AWS · Cloud Computing · AWS Management Console · AWS Security.",
+      image: require("./assets/images/AWS-Logo.png"), 
       imageAlt: "AWS Certification",
       footerLink: [
         {
           name: "Certification",
-          url: "https://coursera.org/share/c8bf18d9ea99e024a05d0f85bc45d134" // Replace with actual link
+          url: "https://coursera.org/share/c8bf18d9ea99e024a05d0f85bc45d134" 
         }
       ]
     },
     {
       title: "ChatGPT for Beginners",
       subtitle: "Completed ChatGPT training from Great Learning Academy, learning prompt engineering and AI fundamentals.",
-      image: require("./assets/images/Chatgpt-Logo.png"), // Add a ChatGPT or OpenAI logo
+      image: require("./assets/images/Chatgpt-Logo.png"), 
       imageAlt: "ChatGPT Certification",
       footerLink: [
         {
           name: "Certification",
-          url: "https://www.mygreatlearning.com/certificate/AYBUVPCV" // Replace if unique certificate link is available
+          url: "https://www.mygreatlearning.com/certificate/AYBUVPCV" 
         }
       ]
     },
     {
       title: "SEO with Squarespace",
       subtitle: "Learned practical SEO strategies using Squarespace via Coursera.",
-      image: require("./assets/images/SEO-Logo.png"), // Add an SEO icon or Squarespace logo
+      image: require("./assets/images/SEO-Logo.png"), 
       imageAlt: "SEO Certification",
       footerLink: [
         {
           name: "Certification",
-          url: "https://coursera.org/share/3HLqn2k1VH4QDs4qPrbngPtK5s9KCVmVg2" // Replace with actual link
+          url: "https://coursera.org/share/3HLqn2k1VH4QDs4qPrbngPtK5s9KCVmVg2" 
         }
       ]
     },
     {
-      title: "Amazon Seller Training",
-      subtitle: "Completed seller training at E-Global, Sialkot to understand e-commerce fundamentals.",
-      image: require("./assets/images/Amazon-Logo.png"), // Add Amazon logo
+      title: "Advance Amazon Virtual Assistant",
+      subtitle: "Completed Advance Amazon Virtual Assistant at E-Global, Sialkot to understand e-commerce fundamentals.",
+      image: require("./assets/images/Amazon-Logo.png"), 
       imageAlt: "Amazon Certification",
-      footerLink: []
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1U_ohOl0tCzfFHfjC7jbkgfSuplhYBbgd/view?usp=drive_link" 
+        }
+      ]
     },
     {
       title: "Microsoft Office Management",
       subtitle: "Gained hands-on skills in Word, Excel, and PowerPoint at English Language Club, Sialkot.",
-      image: require("./assets/images/Microsoft365-Logo.png"), // Add Microsoft Office logo
+      image: require("./assets/images/Microsoft365-Logo.png"), 
       imageAlt: "Microsoft Office Certificate",
-      footerLink: []
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1qIoiKctuAkIPM2MCqcMfPXr6wBzpMvbV/view?usp=drive_link" 
+        }
+      ]
+    },
+    {
+      title: "English Proficiency Certificate",
+      subtitle: "Gained hands-on skills in English Proficiency at English Language Club, Sialkot.",
+      image: require("./assets/images/ELC-Logo.jpg"), 
+      imageAlt: "English Proficiency Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1Hebhi4nV_hYZATiav-3qIljwtw1BF-eF/view?usp=sharing" 
+        }
+      ]
+    }, 
+    {
+      title: "CodeAlpha Internship",
+      subtitle: "Contributed to frontend development projects, enhancing user interfaces and improving component functionality.",
+      image: require("./assets/images/CodeAlpha_Logo.png"), 
+      imageAlt: "CodeAlpha Internship Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1rr_-RoYogjAbo7vA_KDK1euw_uLUrlDl/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "RP9 Internship",
+      subtitle: "Conducting comprehensive testing of software applications to ensure quality and functionality.",
+      image: require("./assets/images/RP9-Logo.jpg"), 
+      imageAlt: "RP9 Internship Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1mOPLM2xakkdNskC3ervadSw4ib4cLJjF/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Artificial Intelligence for Beginners",
+      subtitle: "Skills: Artificial Intelligence (AI) · Machine Learning · Data Analysis · Natural Language Processing (NLP) · Python Programming",
+      image: require("./assets/images/Alison-Logo.jpeg"), 
+      imageAlt: "Artificial Intelligence for Beginners Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1zht0vyIicN7361u9SNg_WYbJD2dwHXhr/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "ChatGPT for Beginners",
+      image: require("./assets/images/GreatLearning-Logo.png"), 
+      imageAlt: "ChatGPT for Beginners Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1qlNifOQQvUSF0SCb50Zsr02AcoU0HnFA/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Feature Engineering",
+      image: require("./assets/images/GreatLearning-Logo.png"), 
+      imageAlt: "Feature Engineering Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1YT7QHOz88d57brjQZMN4v1kgeOYvfX-q/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Introduction to Cryptography",
+      image: require("./assets/images/GreatLearning-Logo.png"), 
+      imageAlt: "Introduction to Cryptography Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1Uz3cv8tYlZfyICcoPziKNNSiANbhjFUi/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Master Microsoft 365: Essential Skills and Beyond",
+      subtitle: "Skills: Microsoft Word · Microsoft Excel · Microsoft PowerPoint · Microsoft Teams · Microsoft SharePoint",
+      image: require("./assets/images/Alison-Logo.jpeg"), 
+      imageAlt: "Master Microsoft 365: Essential Skills and Beyond Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1K3kaCv1v42RKsr-8u8dvg1KmxRaJZeqt/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Programming C#: Fundamentals",
+      subtitle: "Skills: C# Programming · Object-Oriented Programming (OOP) · Data Structures · Debugging Techniques",
+      image: require("./assets/images/Alison-Logo.jpeg"), 
+      imageAlt: "Programming C#: Fundamentals Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1xSR2fi8736PIeRxJkqDib9S6k72haXMV/view?usp=drive_link" 
+        }
+      ]
+    }, 
+    {
+      title: "Cloud Essentials - Knowledge Badge Readiness Path",
+      subtitle: "Skills: Cloud Computing Fundamentals · Cloud Service Models · Cloud Security Best Practices · Cost Management in Cloud Environments · Cloud Architecture Principles",
+      image: require("./assets/images/AWS-Logo.png"),
+      imageAlt: "Cloud Essentials - Knowledge Badge Readiness Path Certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1VnoAtxpjdRHHxT1f-Uj28HAmZPNiaBlb/view?usp=drive_link" 
+        }
+      ]
     }
-  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -279,29 +482,16 @@ const contactInfo = {
   github: "https://github.com/musamaakhtar-tech", // Replace with your actual GitHub username
   linkedin: "",
   gmail: "",
-  facebook: "", // Optional: Add your Facebook profile link
+  facebook: "https://www.facebook.com/musamaakhtar.tech", // Optional: Add your Facebook profile link
   twitter: "",  // Optional: Add if you use Twitter professionally
   instagram: "", // Optional: Add your Instagram if it's relevant
   leetcode: "",  // Optional: Add if you use LeetCode
   stackoverflow: "", // Optional: Add if you answer questions or showcase work here
-  medium: "",  // Optional: Add if you write tech blogs
+  medium: "https://medium.com/@musamaakhtar-tech",  // Optional: Add if you write tech blogs
   devto: "",   // Optional: Developer community profile
   display: true // Set false to hide this section
 };
 
-const socialMediaLinks = {
-  github: "#", // Replace with your actual GitHub username
-  linkedin: "#",
-  gmail: "#",
-  facebook: "", // Optional: Add your Facebook profile link
-  twitter: "",  // Optional: Add if you use Twitter professionally
-  instagram: "", // Optional: Add your Instagram if it's relevant
-  leetcode: "",  // Optional: Add if you use LeetCode
-  stackoverflow: "", // Optional: Add if you answer questions or showcase work here
-  medium: "",  // Optional: Add if you write tech blogs
-  devto: "",   // Optional: Developer community profile
-  display: true // Set false to hide this section
-};
 
 // Twitter Section
 
@@ -324,9 +514,6 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
