@@ -1,7 +1,7 @@
 # ⚡️ Software Developer Folio
 
-[![GitHub License](https://img.shields.io/github/license/musamaakhtar-tech/developerFolio?color=blue)](https://github.com/musamaakhtar-tech/developerFolio/blob/master/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/musamaakhtar-tech/developerFolio)](https://github.com/musamaakhtar-tech/developerFolio/stargazers)
+[![GitHub License](https://img.shields.io/github/license/musamaakhtar-tech/developer_Folio?color=blue)](https://github.com/musamaakhtar-tech/developer_Folio/blob/master/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/musamaakhtar-tech/developer_Folio)](https://github.com/musamaakhtar-tech/developer_Folio/stargazers)
 
 ## ✨ A Clean, Beautiful & Responsive Portfolio Template for Developers
 
@@ -87,10 +87,10 @@ You can run the project inside a Docker container:
 
 ```bash
 # Build Docker image
-docker build -t developerfolio:latest .
+docker build -t developer_folio:latest .
 
 # Run the container on port 3000
-docker run -t -p 3000:3000 developerfolio:latest
+docker run -t -p 3000:3000 developer_folio:latest
 ```
 
 This makes it easy to develop in a clean, reproducible environment without manually setting up Node.js or other dependencies.
@@ -103,10 +103,10 @@ Follow these steps to get started locally and start customizing your portfolio:
 
 ```bash
 # Clone this repository
-git clone https://github.com/musamaakhtar-tech/developerFolio.git
+git clone https://github.com/musamaakhtar-tech/developer_Folio.git
 
 # Navigate to the directory
-cd developerFolio
+cd developer_Folio
 
 # Create a .env file
 cp env.example .env
@@ -202,7 +202,7 @@ Customize or replace Lottie animations via the JSON files in `src/assets/lottie`
 1. Edit `package.json`:
 
 ```json
-"homepage": "https://<your-username>.github.io/developerFolio"
+"homepage": "https://<your-username>.github.io/developer_Folio"
 ```
 
 2. Deploy using:
@@ -219,7 +219,7 @@ This will push your site to the `gh-pages` branch and make it available at the s
 
 One-click deploy via Netlify:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/musamaakhtar-tech/developerFolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/musamaakhtar-tech/developer_Folio)
 
 Netlify offers automated deployments from GitHub, continuous integration, and easy configuration for custom domains and SSL.
 
@@ -254,16 +254,8 @@ You are encouraged to replace these assets with your own designs for a more pers
 
 ---
 
-## 🙌 Contributors
-
-Thanks to all contributors of this project and the original [`@saadpasta`](https://github.com/saadpasta/developerFolio) for the inspiration.
-
-Your contributions are valuable! Feel free to fork the project, open issues, or submit pull requests to enhance the features, fix bugs, or improve documentation.
-
----
-
 ## 📄 License
 
-This project is licensed under the [MIT License](https://github.com/musamaakhtar-tech/developerFolio/blob/master/LICENSE).
+This project is licensed under the [MIT License](https://github.com/musamaakhtar-tech/developer_Folio/blob/master/LICENSE).
 
 You are free to use, modify, and distribute this template in your personal or commercial projects without restrictions. Attribution is appreciated but not required.
